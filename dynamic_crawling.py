@@ -9,6 +9,9 @@ import random
 url = 'https://www.hollys.co.kr/store/korea/korStore2.do'
 result_df = pd.DataFrame(columns=['지역', '매장명', '현황', '주소', '전화번호'])
 sleep_time = random.uniform(2, 4)
+
+url2 = 'https://www.coffeebeankorea.com/store/store.asp'
+
 def exam_1():
     driver = chrome_driver()
     url = f"https://www.hollys.co.kr/store/korea/korStore2.do"
@@ -112,7 +115,6 @@ def hollys_crawling(url):
             break
 
     return result_df
-
 
 
 
